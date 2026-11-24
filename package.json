@@ -1,0 +1,21 @@
+{
+  "name": "tele-dupbot",
+  "version": "1.0.0",
+  "description": "Public multi-group Telegram moderation bot that detects duplicate videos and deletes them only after admin approval.",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/*.test.js",
+    "benchmark": "node scripts/benchmark.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "mongodb": "^6.22.0",
+    "telegraf": "^4.16.3"
+  }
+}
